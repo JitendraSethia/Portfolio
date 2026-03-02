@@ -1,0 +1,26 @@
+📄 HOW TO ADD YOUR RESUME/CV TO THE PORTFOLIO
+==============================================
+
+STEP 1: Prepare Your Resume
+   - Save your resume as a PDF file
+   - Make sure it's professional and up-to-date
+   - Keep file size under 2MB for fast downloads
+
+STEP 2: Rename Your Resume
+   - Rename the file to: Jitendra_Sethia_Resume.pdf
+   - Exact name is important!
+
+STEP 3: Add to Portfolio
+   - Copy your resume file
+   - Paste it into the "assets" folder in your portfolio directory
+   - Path should be: PORTFOLIO/assets/Jitendra_Sethia_Resume.pdf
+
+STEP 4: Test It
+   - Refresh your portfolio website
+   - Click the "Download Resume" button in the Contact section
+   - Your resume should download automatically!
+
+✅ DONE! Your resume is now available for download on your portfolio.
+
+NOTE: If you want to use a different filename, update line in index.html:
+   href="assets/YOUR_FILENAME.pdf"

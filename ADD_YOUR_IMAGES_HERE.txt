@@ -1,0 +1,27 @@
+📸 HOW TO ADD YOUR IMAGES TO THE PORTFOLIO
+==========================================
+
+STEP 1: Copy your 6 images to the "images" folder
+
+STEP 2: Rename them as follows:
+   - profile.jpg  → Your main profile photo (the one you want in the hero section)
+   - img1.jpg     → Night photo with yellow hoodie
+   - img2.jpg     → Train photo
+   - img3.jpg     → Building entrance photo
+   - img4.jpg     → Traditional attire photo
+   - img5.jpg     → Corridor photo (optional - not currently used)
+   - img6.jpg     → Night selfie (optional - not currently used)
+
+STEP 3: Supported formats
+   ✓ .jpg
+   ✓ .jpeg
+   ✓ .png
+   ✓ .webp
+
+STEP 4: Recommended image sizes
+   - profile.jpg: 400x400px (square)
+   - img1-4: 300x300px or larger
+
+NOTE: If images are not found, placeholder images will be shown automatically.
+
+After adding images, refresh your browser to see them!
