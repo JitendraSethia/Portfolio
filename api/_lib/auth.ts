@@ -39,7 +39,11 @@ function db(): Redis {
 }
 
 export class HttpError extends Error {
-  constructor(public status: number, message: string, public extra: Record<string, unknown> = {}) {
+  constructor(
+    public status: number,
+    message: string,
+    public extra: Record<string, unknown> = {},
+  ) {
     super(message);
   }
 }
@@ -144,24 +148,31 @@ export async function resetPassword(code: string, newPassword: string): Promise<
 }
 
 async function sendEmail(code: string) {
-  const key = process.env.RESEND_API_KEY;
-  if (!key) throw new HttpError(500, 'Email is not configured (RESEND_API_KEY missing).');
-  const res = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      from: process.env.ADMIN_EMAIL_FROM ?? 'Portfolio Admin <onboarding@resend.dev>',
-      to: [ADMIN_EMAIL],
-      subject: `${code} is your portfolio admin code`,
-      text: `Your code is ${code}\n\nIt expires in 10 minutes and works once. If you didn't ask for this, ignore this email — your password hasn't changed.`,
-      html: `<div style="font-family:Arial,sans-serif;max-width:420px;margin:auto;padding:24px;background:#0e0e13;color:#f4f1ec;border-radius:12px">
+  const apiKey = process.env.RESEND_API_KEY?.trim();
+  if (!apiKey) throw new HttpError(500, 'Email is not configured (RESEND_API_KEY missing).');
+  // Checked up front so a mis-pasted key fails with a clear message instead of a runtime error that could echo it.
+  if (!/^re_[A-Za-z0-9_]+$/.test(apiKey)) throw new HttpError(500, 'The email key in Vercel (RESEND_API_KEY) is not valid. Paste it once, with no spaces.');
+  let res: Response;
+  try {
+    res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: process.env.ADMIN_EMAIL_FROM ?? 'Portfolio Admin <onboarding@resend.dev>',
+        to: [ADMIN_EMAIL],
+        subject: `${code} is your portfolio admin code`,
+        text: `Your code is ${code}\n\nIt expires in 10 minutes and works once. If you didn't ask for this, ignore this email — your password hasn't changed.`,
+        html: `<div style="font-family:Arial,sans-serif;max-width:420px;margin:auto;padding:24px;background:#0e0e13;color:#f4f1ec;border-radius:12px">
         <p style="margin:0 0 4px;color:#ff3d5a;font-size:11px;letter-spacing:3px;font-weight:bold">PORTFOLIO ADMIN</p>
         <p style="margin:0 0 20px;color:#a7a6ad">Your one-time code:</p>
         <p style="margin:0 0 20px;font-size:36px;letter-spacing:10px;font-weight:bold">${code}</p>
         <p style="margin:0;color:#a7a6ad;font-size:13px">Expires in 10 minutes and works once. If you didn't ask for this, ignore this email — your password hasn't changed.</p>
       </div>`,
-    }),
-  });
+      }),
+    });
+  } catch {
+    throw new HttpError(502, 'Could not reach the email service. Try again in a minute.');
+  }
   if (!res.ok) throw new HttpError(502, `Could not send the email (${res.status}).`);
 }
 
@@ -194,8 +205,17 @@ export function assertSameOrigin(req: Request) {
   if (req.headers.get('x-admin') !== '1') throw new HttpError(403, 'Forbidden.');
 }
 
+/** Strips anything that looks like a credential before it can reach the logs. */
+export function redact(text: string): string {
+  return text
+    .replace(/Bearer\s+[^\s"']+/gi, 'Bearer [redacted]')
+    .replace(/\b(re_|github_pat_|ghp_|gho_|ghs_)[A-Za-z0-9_]+/g, '$1[redacted]')
+    .replace(/\b[A-Za-z0-9_-]{32,}\b/g, '[redacted]');
+}
+
 export function errorResponse(e: unknown): Response {
   if (e instanceof HttpError) return json({ error: e.message, ...e.extra }, e.status);
-  console.error(e);
+  const err = e instanceof Error ? e : new Error(String(e));
+  console.error(redact(`${err.name}: ${err.message}\n${err.stack ?? ''}`));
   return json({ error: 'Something went wrong.' }, 500);
 }
