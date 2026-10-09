@@ -7,6 +7,8 @@ export default defineConfig({
   build: {
     target: 'es2020',
     rollupOptions: {
+      // The admin is its own page, so none of its code ships with the public site.
+      input: { main: 'index.html', admin: 'admin.html' },
       output: {
         manualChunks: { motion: ['framer-motion'], react: ['react', 'react-dom'] },
       },

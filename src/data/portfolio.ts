@@ -14,21 +14,9 @@ import introSlidesJson from '../content/introSlides.json';
 import viewersJson from '../content/viewers.json';
 import sectionsJson from '../content/sections.json';
 
-export type Palette = { from: string; via: string; to: string; accent: string };
+import { MOTIFS, SECTION_IDS, theme, type Motif, type Palette, type SectionId } from './themes';
 
-/** Named colour themes — the admin picks one of these names. */
-export const THEMES = {
-  crimson: { from: '#24060b', via: '#6e0d1d', to: '#09070a', accent: '#ff3d5a' },
-  amber: { from: '#1c1003', via: '#6b3c06', to: '#0a0806', accent: '#ffb547' },
-  ocean: { from: '#04121f', via: '#0f4c6e', to: '#05080d', accent: '#4cc9ff' },
-  violet: { from: '#120822', via: '#3d1a6e', to: '#07060c', accent: '#b98bff' },
-  jade: { from: '#03150f', via: '#0d5a40', to: '#050a08', accent: '#46e3a8' },
-} satisfies Record<string, Palette>;
-export type ThemeName = keyof typeof THEMES;
-const theme = (name: string): Palette => THEMES[name as ThemeName] ?? THEMES.crimson;
-
-export const MOTIFS = ['shield', 'flow', 'tenants', 'chat', 'agent', 'chart'] as const;
-export type Motif = (typeof MOTIFS)[number];
+export { MOTIFS, SECTION_IDS, THEMES, type Motif, type Palette, type SectionId, type ThemeName } from './themes';
 
 const { education: educationJson, experience: experienceJson, ...profileRest } = profileJson;
 
@@ -114,9 +102,6 @@ export const topPicks: TopPick[] = topPicksJson.map(({ theme: t, ...p }) => ({ .
 /** Slides for the "▶ Play Intro" cinematic sequence. */
 export type IntroSlide = { kicker: string; title: string; lines: string[]; chips?: string[] };
 export const introSlides: IntroSlide[] = introSlidesJson;
-
-export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
-export const SECTION_IDS: SectionId[] = ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'];
 
 /** Viewer profile ids come from content, so the admin can rename or add profiles. */
 export type ProfileId = string;

@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #07070a;
+  --color-ink-2: #0e0e13;
+  --color-ink-3: #16161d;
+  --color-ink-4: #1f1f28;
+  --color-crimson: #e5132b;
+  --color-crimson-2: #ff3d5a;
+  --color-bone: #f4f1ec;
+  --color-mist: #a7a6ad;
+  --color-smoke: #6d6c75;
+  --color-ok: #46e3a8;
+  --font-display: 'Bebas Neue', Impact, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-bone);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-crimson);
+  color: white;
+}
+
+.field {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  background: var(--color-ink);
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-bone);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.field:focus {
+  border-color: var(--color-crimson-2);
+  box-shadow: 0 0 0 3px rgb(255 61 90 / 0.18);
+}
+.field::placeholder {
+  color: var(--color-smoke);
+}
+textarea.field {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.5rem;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.btn-primary {
+  background: var(--color-crimson);
+  color: white;
+}
+.btn-primary:not(:disabled):hover {
+  background: var(--color-crimson-2);
+}
+.btn-ghost {
+  border: 1px solid rgb(255 255 255 / 0.15);
+  color: var(--color-bone);
+}
+.btn-ghost:not(:disabled):hover {
+  border-color: rgb(255 255 255 / 0.4);
+  background: rgb(255 255 255 / 0.05);
+}
+.icon-btn {
+  display: inline-flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  color: var(--color-mist);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.icon-btn:not(:disabled):hover {
+  background: rgb(255 255 255 / 0.08);
+  color: var(--color-bone);
+}
+.icon-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.drag-over {
+  outline: 2px dashed var(--color-crimson-2);
+  outline-offset: 2px;
+}
