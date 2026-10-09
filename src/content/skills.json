@@ -1,0 +1,352 @@
+[
+  {
+    "id": "automation",
+    "title": "Automation",
+    "subtitle": "The day job",
+    "skills": [
+      {
+        "name": "Make.com",
+        "mono": "Mk",
+        "note": "Primary",
+        "usedIn": [
+          "The Content Engine",
+          "Farm finance & ops automation"
+        ]
+      },
+      {
+        "name": "n8n",
+        "mono": "n8",
+        "usedIn": [
+          "Codexlane client builds"
+        ]
+      },
+      {
+        "name": "GoHighLevel",
+        "mono": "GH",
+        "usedIn": [
+          "Never Miss a Lead",
+          "Codexlane client builds"
+        ]
+      },
+      {
+        "name": "Airtable",
+        "mono": "At",
+        "usedIn": [
+          "Farm finance & ops automation"
+        ]
+      },
+      {
+        "name": "Webhooks",
+        "mono": "Wh",
+        "usedIn": [
+          "The Content Engine"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai",
+    "title": "AI & Voice",
+    "subtitle": "Agents that take actions",
+    "skills": [
+      {
+        "name": "VAPI",
+        "mono": "Va",
+        "usedIn": [
+          "Never Miss a Lead",
+          "\"Mark\" booking agent"
+        ]
+      },
+      {
+        "name": "OpenAI",
+        "mono": "Oa",
+        "usedIn": [
+          "The Content Engine"
+        ]
+      },
+      {
+        "name": "ElevenLabs",
+        "mono": "El",
+        "usedIn": [
+          "The Content Engine"
+        ]
+      },
+      {
+        "name": "Gemini",
+        "mono": "Ge",
+        "usedIn": [
+          "People's Priorities",
+          "Prep Portal"
+        ]
+      },
+      {
+        "name": "Groq",
+        "mono": "Gq",
+        "usedIn": [
+          "AI-First CRM"
+        ]
+      },
+      {
+        "name": "LangGraph",
+        "mono": "Lg",
+        "usedIn": [
+          "AI-First CRM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "integrations",
+    "title": "Integrations",
+    "subtitle": "Wiring the world together",
+    "skills": [
+      {
+        "name": "Twilio",
+        "mono": "Tw",
+        "usedIn": [
+          "Never Miss a Lead"
+        ]
+      },
+      {
+        "name": "Google Workspace",
+        "mono": "Gw",
+        "usedIn": [
+          "\"Mark\" calendar sync",
+          "Farm finance & ops automation"
+        ]
+      },
+      {
+        "name": "Meta Graph API",
+        "mono": "Me",
+        "usedIn": [
+          "The Content Engine"
+        ]
+      },
+      {
+        "name": "YouTube Data API",
+        "mono": "Yt",
+        "usedIn": [
+          "The Content Engine"
+        ]
+      },
+      {
+        "name": "Creatomate",
+        "mono": "Cr",
+        "usedIn": [
+          "The Content Engine"
+        ]
+      },
+      {
+        "name": "OAuth 2.0",
+        "mono": "Oa",
+        "usedIn": []
+      }
+    ]
+  },
+  {
+    "id": "reliability",
+    "title": "Reliability",
+    "subtitle": "Built to run unattended",
+    "skills": [
+      {
+        "name": "Webhook dedup",
+        "mono": "Dd",
+        "usedIn": [
+          "The Content Engine"
+        ]
+      },
+      {
+        "name": "Retry + backoff",
+        "mono": "Rb",
+        "usedIn": [
+          "The Content Engine",
+          "AI-First CRM"
+        ]
+      },
+      {
+        "name": "Rate limiting",
+        "mono": "Rl",
+        "usedIn": [
+          "The Content Engine",
+          "AI-First CRM"
+        ]
+      },
+      {
+        "name": "Idempotency",
+        "mono": "Id",
+        "usedIn": [
+          "Telemedicine Backend",
+          "Prep Portal"
+        ]
+      },
+      {
+        "name": "Saga compensation",
+        "mono": "Sg",
+        "usedIn": [
+          "Telemedicine Backend"
+        ]
+      },
+      {
+        "name": "Graceful degradation",
+        "mono": "Gd",
+        "usedIn": [
+          "People's Priorities",
+          "AI-First CRM",
+          "Prep Portal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "languages",
+    "title": "Languages",
+    "subtitle": "Python & TypeScript first",
+    "skills": [
+      {
+        "name": "Python",
+        "mono": "Py",
+        "usedIn": [
+          "AI-First CRM",
+          "People's Priorities",
+          "Futures Trading Bot"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "mono": "Ts",
+        "usedIn": [
+          "Telemedicine Backend",
+          "Prep Portal"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "mono": "Js",
+        "usedIn": []
+      },
+      {
+        "name": "SQL",
+        "mono": "Sq",
+        "usedIn": []
+      },
+      {
+        "name": "Java",
+        "mono": "Jv",
+        "usedIn": []
+      },
+      {
+        "name": "C",
+        "mono": "C",
+        "usedIn": []
+      }
+    ]
+  },
+  {
+    "id": "backend",
+    "title": "Backend & Data",
+    "subtitle": "When no-code hits its limits",
+    "skills": [
+      {
+        "name": "FastAPI",
+        "mono": "Fa",
+        "usedIn": [
+          "AI-First CRM"
+        ]
+      },
+      {
+        "name": "Node.js",
+        "mono": "No",
+        "usedIn": [
+          "Realtime Chat",
+          "Jain Consultancy platform"
+        ]
+      },
+      {
+        "name": "Fastify",
+        "mono": "Fy",
+        "usedIn": [
+          "Telemedicine Backend"
+        ]
+      },
+      {
+        "name": "Flask",
+        "mono": "Fl",
+        "usedIn": [
+          "People's Priorities"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "mono": "Pg",
+        "usedIn": [
+          "Telemedicine Backend",
+          "Prep Portal"
+        ]
+      },
+      {
+        "name": "Redis",
+        "mono": "Rd",
+        "usedIn": [
+          "Telemedicine Backend"
+        ]
+      },
+      {
+        "name": "Prisma",
+        "mono": "Pr",
+        "usedIn": [
+          "Prep Portal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "frontend",
+    "title": "Frontend & Infra",
+    "subtitle": "Shipping it",
+    "skills": [
+      {
+        "name": "React",
+        "mono": "Re",
+        "usedIn": [
+          "AI-First CRM",
+          "Realtime Chat"
+        ]
+      },
+      {
+        "name": "Next.js",
+        "mono": "Nx",
+        "usedIn": [
+          "Prep Portal"
+        ]
+      },
+      {
+        "name": "React Native",
+        "mono": "Rn",
+        "usedIn": [
+          "Realtime Chat"
+        ]
+      },
+      {
+        "name": "Docker",
+        "mono": "Dk",
+        "usedIn": [
+          "Telemedicine Backend"
+        ]
+      },
+      {
+        "name": "GitHub Actions",
+        "mono": "Ga",
+        "usedIn": [
+          "Telemedicine Backend"
+        ]
+      },
+      {
+        "name": "OpenTelemetry",
+        "mono": "Ot",
+        "usedIn": [
+          "Telemedicine Backend"
+        ]
+      }
+    ]
+  }
+]

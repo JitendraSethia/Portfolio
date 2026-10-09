@@ -1,0 +1,31 @@
+[
+  {
+    "id": "sih-2025",
+    "title": "National Finalist",
+    "org": "Smart India Hackathon 2025",
+    "detail": "Team lead, Suryadut — a solar-powered de-watering system for mining operations. Top 0.1% of 50,000+ teams nationally.",
+    "laurel": "Top 0.1%"
+  },
+  {
+    "id": "ai-for-bharat",
+    "title": "GramLink AI",
+    "org": "AI For Bharat 2025",
+    "detail": "Lead developer — a multilingual government-scheme eligibility assistant.",
+    "laurel": "Lead Developer"
+  },
+  {
+    "id": "eibs",
+    "title": "Bond Buy",
+    "org": "EIBS 2025",
+    "detail": "Lead developer — blockchain bond tokenization with SIP infrastructure on WeilChain.",
+    "laurel": "Lead Developer"
+  },
+  {
+    "id": "gdg",
+    "title": "People's Priorities",
+    "org": "GDG Build with AI · Kolkata",
+    "detail": "Trilingual civic-grievance triage platform with AI classification and a full rule-based fallback.",
+    "laurel": "Build with AI",
+    "link": "https://github.com/JitendraSethia/GDG--People-s-Priorities--Kolkata"
+  }
+]

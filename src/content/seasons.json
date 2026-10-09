@@ -1,0 +1,195 @@
+[
+  {
+    "title": "The Beginning",
+    "period": "2023",
+    "synopsis": "Kolkata. School wraps up, and Computer Science begins.",
+    "episodes": [
+      {
+        "title": "The Foundation",
+        "description": "Higher Secondary (XII) at Pearls Of God, Kolkata.",
+        "tags": [
+          "Class XII"
+        ],
+        "runtime": "2023",
+        "theme": "amber"
+      },
+      {
+        "title": "The Engineer",
+        "description": "B.Tech in Computer Science & Engineering at Techno International Newtown (MAKAUT) — DSA, ML, networks, DBMS, image processing.",
+        "tags": [
+          "B.Tech CSE",
+          "CGPA 7.76"
+        ],
+        "runtime": "2023 – 2027",
+        "theme": "violet"
+      }
+    ]
+  },
+  {
+    "title": "Into the Wild",
+    "period": "Freelance",
+    "synopsis": "Real clients, real phones ringing at 2 AM. Automation that has to work when nobody is watching.",
+    "episodes": [
+      {
+        "title": "Never Miss a Lead",
+        "description": "Six GoHighLevel sub-accounts for an Australian tree-care group, with an AI receptionist and a VAPI qualification agent.",
+        "tags": [
+          "GoHighLevel",
+          "VAPI",
+          "Twilio"
+        ],
+        "runtime": "Australia",
+        "theme": "jade"
+      },
+      {
+        "title": "The Content Engine",
+        "description": "300+ videos a month from one Make.com scenario — script, voice, render, publish — with dedup and retries.",
+        "tags": [
+          "Make.com",
+          "OpenAI",
+          "ElevenLabs"
+        ],
+        "runtime": "300+ / month",
+        "theme": "amber"
+      },
+      {
+        "title": "Meet Mark",
+        "description": "A VAPI voice booking agent with two-way calendar sync — and the hunt for the drift that caused double-bookings.",
+        "tags": [
+          "VAPI",
+          "Google Calendar"
+        ],
+        "runtime": "Voice agent",
+        "theme": "crimson"
+      },
+      {
+        "title": "The Back Office",
+        "description": "Invoice parsing, reconciliation, scheduling and restock alerts for an agricultural client; a custom Node.js platform for Jain Consultancy.",
+        "tags": [
+          "Airtable",
+          "Make.com",
+          "Node.js"
+        ],
+        "runtime": "Ops automation",
+        "theme": "ocean"
+      }
+    ]
+  },
+  {
+    "title": "Under the Hood",
+    "period": "Engineering",
+    "synopsis": "Going past what visual builders expose — backends, agents and realtime systems, written from scratch.",
+    "episodes": [
+      {
+        "title": "The Saga",
+        "description": "A telemedicine backend with an idempotency layer, a compensating booking saga and AES-256-GCM field encryption.",
+        "tags": [
+          "Fastify",
+          "PostgreSQL",
+          "BullMQ"
+        ],
+        "runtime": "36 endpoints",
+        "theme": "crimson"
+      },
+      {
+        "title": "The Agent",
+        "description": "An AI-first CRM where a LangGraph agent and a form share one write path.",
+        "tags": [
+          "LangGraph",
+          "FastAPI",
+          "Groq"
+        ],
+        "runtime": "5 tools",
+        "theme": "ocean"
+      },
+      {
+        "title": "Presence",
+        "description": "Realtime chat on web and Android with reference-counted presence — deployed and live.",
+        "tags": [
+          "Socket.IO",
+          "Expo"
+        ],
+        "runtime": "Live on Render",
+        "theme": "jade"
+      },
+      {
+        "title": "Clock Drift",
+        "description": "A Binance Futures testnet bot — and the -1021 error that taught it to sync with the server clock.",
+        "tags": [
+          "Python",
+          "Streamlit"
+        ],
+        "runtime": "3 interfaces",
+        "theme": "violet"
+      }
+    ]
+  },
+  {
+    "title": "The National Stage",
+    "period": "2025",
+    "synopsis": "Four competitions, one national final.",
+    "episodes": [
+      {
+        "title": "Suryadut",
+        "description": "Smart India Hackathon 2025 National Finalist — team lead, top 0.1% of 50,000+ teams.",
+        "tags": [
+          "SIH 2025",
+          "Hardware",
+          "Team lead"
+        ],
+        "runtime": "National final",
+        "theme": "amber"
+      },
+      {
+        "title": "People's Priorities",
+        "description": "GDG Build with AI, Kolkata — trilingual civic-grievance triage that works with zero API keys.",
+        "tags": [
+          "Gemini",
+          "Flask",
+          "Maps"
+        ],
+        "runtime": "GDG",
+        "theme": "jade"
+      },
+      {
+        "title": "GramLink & Bond Buy",
+        "description": "AI For Bharat (multilingual scheme eligibility) and EIBS (bond tokenization with SIP on WeilChain) — lead developer on both.",
+        "tags": [
+          "AI For Bharat",
+          "EIBS"
+        ],
+        "runtime": "2 builds",
+        "theme": "violet"
+      }
+    ]
+  },
+  {
+    "title": "Now Streaming",
+    "period": "Present",
+    "synopsis": "Automation by day, engineering by night — and the degree finishes in 2027.",
+    "episodes": [
+      {
+        "title": "The Automation Engineer",
+        "description": "AI Automation Engineer at Codexlane Infotech — Make.com, n8n and GoHighLevel builds with full rebuild documentation.",
+        "tags": [
+          "Codexlane",
+          "n8n",
+          "GoHighLevel"
+        ],
+        "runtime": "Current",
+        "theme": "crimson"
+      },
+      {
+        "title": "Prep Portal",
+        "description": "A NEET / JEE / CUET exam platform for a freelance client — reload-proof timer, autosave and streamed AI explanations.",
+        "tags": [
+          "Next.js",
+          "Prisma",
+          "Gemini"
+        ],
+        "runtime": "Client build",
+        "theme": "violet"
+      }
+    ]
+  }
+]

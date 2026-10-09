@@ -1,0 +1,37 @@
+{
+  "about": {
+    "nav": "About",
+    "card": "About Me",
+    "theme": "violet"
+  },
+  "journey": {
+    "nav": "Journey",
+    "card": "My Journey",
+    "theme": "amber"
+  },
+  "originals": {
+    "nav": "Originals",
+    "card": "My Projects",
+    "theme": "crimson"
+  },
+  "picks": {
+    "nav": "Top Picks",
+    "card": "Top Picks",
+    "theme": "jade"
+  },
+  "skills": {
+    "nav": "Skills",
+    "card": "My Skills",
+    "theme": "ocean"
+  },
+  "moments": {
+    "nav": "Moments",
+    "card": "My Achievements",
+    "theme": "crimson"
+  },
+  "story": {
+    "nav": "Resume",
+    "card": "The Full Story",
+    "theme": "violet"
+  }
+}

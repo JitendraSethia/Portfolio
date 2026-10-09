@@ -1,0 +1,70 @@
+{
+  "fullName": "Jitendra Sethia",
+  "displayName": "Jitendra Sethia",
+  "firstName": "JITENDRA",
+  "seriesTag": "THE SERIES",
+  "originalLabel": "A SETHIA ORIGINAL",
+  "role": "AI Automation Engineer",
+  "tagline": [
+    "AI Automation",
+    "Backend",
+    "AI Agents"
+  ],
+  "intro": "Automation engineer shipping production workflow systems for clients in Australia and India — a pipeline producing 300+ videos a month, a six-brand GoHighLevel build with an AI voice receptionist — backed by real engineering in FastAPI, Node.js and PostgreSQL.",
+  "location": "Kolkata, India",
+  "email": "jitendrasethia053@gmail.com",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/jitendra-sethia",
+    "github": "https://github.com/JitendraSethia"
+  },
+  "githubHandle": "github.com/JitendraSethia",
+  "resumePdf": "/assets/Jitendra_Sethia_Resume.pdf",
+  "resumeFileName": "Jitendra_Sethia_Resume.pdf",
+  "interests": [
+    "Agentic AI",
+    "Reliability engineering",
+    "Voice agents",
+    "Rhythm instruments"
+  ],
+  "education": [
+    {
+      "school": "Techno International Newtown",
+      "place": "Kolkata",
+      "degree": "B.Tech — Computer Science & Engineering (MAKAUT)",
+      "period": "2023 – May 2027 (expected)",
+      "score": "CGPA 7.76"
+    },
+    {
+      "school": "Pearls Of God",
+      "place": "Kolkata",
+      "degree": "Higher Secondary (XII)",
+      "period": "2023",
+      "score": "Class XII"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Codexlane Infotech Pvt. Ltd.",
+      "role": "AI Automation Engineer",
+      "place": "Kolkata",
+      "period": "Current",
+      "points": [
+        "Design multi-router Make.com and n8n scenarios orchestrating GoHighLevel CRM with OpenAI, ElevenLabs, Creatomate, Meta Graph API, YouTube Data API, Twilio and VAPI.",
+        "Configure GoHighLevel sub-accounts, pipelines, funnels and automation workflows end to end for client delivery.",
+        "Primary technical contact on client accounts — requirement gathering, build, and full rebuild documentation as a standard deliverable."
+      ]
+    },
+    {
+      "company": "Freelance",
+      "role": "Automation Engineer",
+      "place": "Clients in Australia and India",
+      "period": "Ongoing",
+      "points": [
+        "Six-brand GoHighLevel implementation for an Australian tree-care group — Twilio SMS, call forwarding, an AI receptionist and a VAPI lead-qualification agent.",
+        "Content pipeline producing 300+ videos per month with throttling, webhook deduplication and exponential-backoff retries.",
+        "\"Mark\", a VAPI voice booking agent with two-way GoHighLevel ↔ Google Calendar sync; fixed tool-call failures, timezone mismatches and sync drift that caused double-bookings.",
+        "Finance and operations automation for an agricultural client on Make.com and Airtable; custom Node.js backend for Jain Consultancy where no-code hit its limits."
+      ]
+    }
+  ]
+}

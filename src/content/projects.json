@@ -1,0 +1,358 @@
+[
+  {
+    "id": "content-engine",
+    "title": "The Content Engine",
+    "year": "Client",
+    "genre": "Automation • Make.com • AI media",
+    "logline": "A topic goes in. A scripted, voiced, rendered and published video comes out — 300+ times a month.",
+    "stack": [
+      "Make.com",
+      "OpenAI",
+      "ElevenLabs",
+      "Creatomate",
+      "Meta Graph API",
+      "YouTube Data API"
+    ],
+    "build": [
+      "Architected a Make.com scenario chaining OpenAI (scripting) → ElevenLabs (voice) → Creatomate (render) → Meta and YouTube APIs (publish) for an MSME brand.",
+      "Token-bucket throttling on rate-limited endpoints so the pipeline never trips provider limits.",
+      "Webhook deduplication, so a replayed hook can never double-post a video.",
+      "Exponential-backoff retries on render failures, so a flaky render recovers on its own instead of stalling the queue."
+    ],
+    "features": [
+      "Script generation",
+      "AI voice-over",
+      "Templated video render",
+      "Auto-publish to Meta + YouTube",
+      "Dedup + retry built in"
+    ],
+    "metrics": [
+      {
+        "value": "300+",
+        "label": "videos per month"
+      },
+      {
+        "value": "4",
+        "label": "AI / media services chained"
+      },
+      {
+        "value": "2",
+        "label": "publishing platforms"
+      }
+    ],
+    "note": "Runs inside the client’s accounts · no public demo",
+    "motif": "flow",
+    "theme": "amber"
+  },
+  {
+    "id": "never-miss-a-lead",
+    "title": "Never Miss a Lead",
+    "year": "Client",
+    "genre": "GoHighLevel • Voice AI • Twilio",
+    "logline": "A six-brand tree-care group in Australia — every after-hours call is now answered, qualified and routed instead of lost.",
+    "stack": [
+      "GoHighLevel",
+      "VAPI",
+      "Twilio",
+      "Google Calendar"
+    ],
+    "build": [
+      "Configured 6 GoHighLevel sub-accounts with Twilio SMS workflows, call forwarding and an AI receptionist.",
+      "Built a VAPI lead-qualification voice agent so calls outside business hours are answered and routed.",
+      "Built \"Mark\", a VAPI voice booking agent with two-way GoHighLevel ↔ Google Calendar sync — diagnosed and fixed tool-call failures, timezone mismatches and availability-sync drift that was producing double-bookings."
+    ],
+    "features": [
+      "AI receptionist",
+      "Voice lead qualification",
+      "SMS follow-up",
+      "Two-way calendar sync",
+      "Per-brand sub-accounts"
+    ],
+    "metrics": [
+      {
+        "value": "6",
+        "label": "brands / sub-accounts"
+      },
+      {
+        "value": "24/7",
+        "label": "calls answered"
+      },
+      {
+        "value": "2-way",
+        "label": "calendar sync"
+      }
+    ],
+    "note": "Runs inside the client’s accounts · no public demo",
+    "motif": "chat",
+    "theme": "jade"
+  },
+  {
+    "id": "telemedicine-backend",
+    "title": "Telemedicine Backend",
+    "year": "Backend",
+    "genre": "Backend • Reliability • Security",
+    "logline": "A booking backend built around the failure path — idempotent requests, a compensating saga and encrypted patient data.",
+    "stack": [
+      "Fastify",
+      "TypeScript",
+      "PostgreSQL",
+      "Redis",
+      "BullMQ",
+      "Docker"
+    ],
+    "build": [
+      "Postgres-durable idempotency layer with request fingerprinting and exact response replay.",
+      "3-step booking saga with compensating transactions, guarded by row locks and a delayed recovery job — four independent double-booking guards.",
+      "AES-256-GCM field encryption with a rotatable key ring and an HMAC blind index; tamper-evident audit log.",
+      "OpenTelemetry + Prometheus instrumentation and GitHub Actions CI with real service containers. Designed against latency and uptime targets from the brief (not load-tested); payments and notifications are mocked at the interface boundary."
+    ],
+    "features": [
+      "Idempotency layer",
+      "Booking saga with compensation",
+      "Field-level encryption",
+      "Audit log",
+      "OTel + Prometheus",
+      "CI with live services"
+    ],
+    "metrics": [
+      {
+        "value": "36",
+        "label": "REST endpoints"
+      },
+      {
+        "value": "10",
+        "label": "migrations"
+      },
+      {
+        "value": "33",
+        "label": "passing tests"
+      },
+      {
+        "value": "4",
+        "label": "double-booking guards"
+      }
+    ],
+    "github": "https://github.com/JitendraSethia/amrutam-telemedicine-backend",
+    "motif": "shield",
+    "theme": "crimson"
+  },
+  {
+    "id": "prep-portal",
+    "title": "Prep Portal",
+    "year": "Client",
+    "genre": "Full-Stack • EdTech • AI",
+    "logline": "A NEET / JEE / CUET exam platform with a tamper-proof timer and AI explanations that never leave a student stranded.",
+    "stack": [
+      "Next.js 16",
+      "React 19",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "Gemini"
+    ],
+    "build": [
+      "Server-derived exam timer that survives reloads and client tampering, with idempotent submission.",
+      "Exam player with a 5-state question palette, 30-second autosave and per-question time tracking.",
+      "Polymorphic scoring engine with negative marking; streamed Gemini explanations cached in the DB, falling back to author solutions when the API is unavailable.",
+      "Admin analytics with per-student drilldown. Built for a real freelance brief — all four core asks implemented."
+    ],
+    "features": [
+      "Reload-proof timer",
+      "Autosave",
+      "Negative marking",
+      "Streamed AI explanations",
+      "Admin analytics"
+    ],
+    "metrics": [
+      {
+        "value": "17",
+        "label": "model schema"
+      },
+      {
+        "value": "30s",
+        "label": "autosave"
+      },
+      {
+        "value": "~7.1k",
+        "label": "lines of code"
+      }
+    ],
+    "github": "https://github.com/JitendraSethia/prep-portal",
+    "motif": "tenants",
+    "theme": "violet"
+  },
+  {
+    "id": "ai-first-crm",
+    "title": "AI-First CRM",
+    "year": "AI",
+    "genre": "AI Agents • LangGraph • Full-Stack",
+    "logline": "Log a doctor visit by chatting or by form — both go through the same code path, so they can never disagree.",
+    "stack": [
+      "FastAPI",
+      "LangGraph",
+      "Groq",
+      "React",
+      "Redux Toolkit",
+      "SQLAlchemy"
+    ],
+    "build": [
+      "A LangGraph ReAct agent with exactly 5 tools that share the same CRUD layer as the REST endpoints, so agent-driven and form-driven writes cannot diverge.",
+      "Two-tier model routing on Groq — Llama 3.3 70B for reasoning, Llama 3.1 8B for extraction — to cut cost and latency.",
+      "Configured automatic retry plus custom 429 detection and graceful degradation; works without an API key.",
+      "Agent tool calls surface in the UI as labelled pills, and the form visibly fills in when the agent logs something."
+    ],
+    "features": [
+      "ReAct agent, 5 tools",
+      "Shared CRUD layer",
+      "Two-tier model routing",
+      "Rate-limit resilience",
+      "Live form fill"
+    ],
+    "metrics": [
+      {
+        "value": "5",
+        "label": "agent tools"
+      },
+      {
+        "value": "2",
+        "label": "model tiers"
+      },
+      {
+        "value": "1",
+        "label": "shared write path"
+      }
+    ],
+    "github": "https://github.com/JitendraSethia/Task1--Jitenda-Sethia",
+    "motif": "agent",
+    "theme": "ocean"
+  },
+  {
+    "id": "peoples-priorities",
+    "title": "People's Priorities",
+    "year": "GDG",
+    "genre": "Civic Tech • AI • Maps",
+    "logline": "Kolkata citizens report problems in Bengali, Hindi or English; officials see them triaged, clustered and mapped.",
+    "stack": [
+      "Flask",
+      "Google Gemini",
+      "Google Maps",
+      "Capacitor"
+    ],
+    "build": [
+      "Gemini 2.5 Flash structured-output classification behind a complete rule-based fallback — the platform runs with zero API keys and a submission never stalls on an outage.",
+      "Explainable 0–100 urgency scoring with human-readable justifications.",
+      "Duplicate clustering combining geo-proximity and text similarity; officials console with a heatmap and ward planning.",
+      "A grounded status assistant for citizens, plus two Android wrappers (citizen and authority)."
+    ],
+    "features": [
+      "Trilingual intake",
+      "AI + rule-based fallback",
+      "Urgency scoring",
+      "Duplicate clustering",
+      "Heatmap console"
+    ],
+    "metrics": [
+      {
+        "value": "3",
+        "label": "languages"
+      },
+      {
+        "value": "22",
+        "label": "routes"
+      },
+      {
+        "value": "0",
+        "label": "API keys required"
+      }
+    ],
+    "github": "https://github.com/JitendraSethia/GDG--People-s-Priorities--Kolkata",
+    "motif": "flow",
+    "theme": "amber"
+  },
+  {
+    "id": "realtime-chat",
+    "title": "Realtime Chat",
+    "year": "Live",
+    "genre": "Realtime • Web + Android",
+    "logline": "Web and Android chat where “online” stays true even with five tabs open — and it’s live right now.",
+    "stack": [
+      "Node.js",
+      "Socket.IO",
+      "React",
+      "React Native (Expo)",
+      "MongoDB / SQLite"
+    ],
+    "build": [
+      "Reference-counted presence that stays correct across multiple tabs and devices.",
+      "Typing indicators and acknowledgement-based delivery receipts.",
+      "Pluggable SQLite / MongoDB storage behind a 2-method repository interface.",
+      "Backend and web client deployed on Render, plus an Expo React Native Android app."
+    ],
+    "features": [
+      "Multi-tab presence",
+      "Typing indicators",
+      "Delivery receipts",
+      "Pluggable storage",
+      "Android app"
+    ],
+    "metrics": [
+      {
+        "value": "2",
+        "label": "clients (web + Android)"
+      },
+      {
+        "value": "Live",
+        "label": "on Render"
+      },
+      {
+        "value": "2",
+        "label": "storage backends"
+      }
+    ],
+    "github": "https://github.com/JitendraSethia/ChatBot",
+    "live": "https://realtime-chat-web-fgrx.onrender.com",
+    "motif": "chat",
+    "theme": "jade"
+  },
+  {
+    "id": "futures-bot",
+    "title": "Futures Trading Bot",
+    "year": "Python",
+    "genre": "Python • Trading • CLI + UI",
+    "logline": "Binance Futures testnet orders through one core, three interfaces — including the bug it found in its own clock.",
+    "stack": [
+      "Python",
+      "python-binance",
+      "Streamlit"
+    ],
+    "build": [
+      "MARKET, LIMIT and STOP orders over one validation → order → client core, reused with zero duplication.",
+      "Three interfaces on the same core: a flag CLI, a guided interactive mode and a Streamlit UI.",
+      "Hardcoded to testnet two independent ways.",
+      "Diagnosed a Binance -1021 clock-drift error from the order logs and fixed it with server-time sync."
+    ],
+    "features": [
+      "3 order types",
+      "CLI + interactive + UI",
+      "Testnet-locked",
+      "Clock-drift fix"
+    ],
+    "metrics": [
+      {
+        "value": "3",
+        "label": "order types"
+      },
+      {
+        "value": "3",
+        "label": "interfaces, one core"
+      },
+      {
+        "value": "2×",
+        "label": "testnet safeguards"
+      }
+    ],
+    "github": "https://github.com/JitendraSethia/trading_bot",
+    "motif": "chart",
+    "theme": "crimson"
+  }
+]

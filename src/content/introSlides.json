@@ -1,0 +1,63 @@
+[
+  {
+    "kicker": "The pitch",
+    "title": "Built to run unattended.",
+    "lines": [
+      "Automation that keeps working when nobody is watching",
+      "Dedup · retries · fallbacks · idempotency"
+    ]
+  },
+  {
+    "kicker": "Automation",
+    "title": "300+ videos a month",
+    "lines": [
+      "Script → voice → render → publish, in one Make.com scenario",
+      "Six-brand GoHighLevel build with an AI receptionist"
+    ],
+    "chips": [
+      "Make.com",
+      "n8n",
+      "GoHighLevel",
+      "VAPI",
+      "Twilio"
+    ]
+  },
+  {
+    "kicker": "Engineering",
+    "title": "Under the hood",
+    "lines": [
+      "Telemedicine backend — saga, idempotency, encryption",
+      "AI-first CRM — LangGraph agent, shared write path",
+      "Realtime chat — live on web and Android"
+    ],
+    "chips": [
+      "FastAPI",
+      "Node.js",
+      "Next.js",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "kicker": "Achievement",
+    "title": "National Finalist",
+    "lines": [
+      "Smart India Hackathon 2025",
+      "Team lead · top 0.1% of 50,000+ teams"
+    ]
+  },
+  {
+    "kicker": "Now",
+    "title": "AI Automation Engineer",
+    "lines": [
+      "Codexlane Infotech · freelance clients in Australia and India",
+      "B.Tech CSE, Techno International Newtown — 2027"
+    ]
+  },
+  {
+    "kicker": "Next episode",
+    "title": "Let's build yours",
+    "lines": [
+      "jitendrasethia053@gmail.com"
+    ]
+  }
+]

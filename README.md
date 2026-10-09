@@ -29,19 +29,20 @@ The static site is written to `dist/` and can be deployed as-is to Vercel, Netli
 
 ## Updating the content
 
-**All content lives in one file: [`src/data/portfolio.ts`](src/data/portfolio.ts).** It was built from the CV and the verified project inventory, and every component reads from it.
+**All content lives in JSON files in [`src/content/`](src/content/)** (edited through `/admin` once the admin panel is in place). [`src/data/portfolio.ts`](src/data/portfolio.ts) loads them and adds the computed parts — theme colours, episode codes and counts — so those never need editing.
 
 | To change… | Edit |
 | --- | --- |
-| Name, intro, email, LinkedIn, GitHub | `profile` |
-| A project, or a new one | `projects` (add an object; it appears in Originals, the overlay, the resume sheet and the counts) |
-| Achievements / public repos | `achievements`, `repos` |
-| Skills and their "where it's used" notes | `skillCategories`, `skillEvidence` |
-| Seasons and episodes (My Journey) | `seasons` |
-| Top 10 row | `topPicks` |
-| ▶ Play Intro highlight reel | `introSlides` |
-| Profile order (Client / Recruiter / Developer) | `viewerProfiles` |
-| Opening studio card text | `profile.originalLabel` |
+| Name, intro, email, links, interests, education, experience | `profile.json` |
+| Projects (Originals) — order in the file is the order on the site | `projects.json` (`theme`: crimson / amber / ocean / violet / jade · `motif`: shield / flow / tenants / chat / agent / chart) |
+| Achievements / public repos | `achievements.json`, `repos.json` |
+| Skills and where each is used | `skills.json` (`usedIn` on each skill) |
+| Seasons and episodes (episode codes are numbered automatically) | `seasons.json` |
+| Top Picks row | `topPicks.json` |
+| ▶ Play Intro highlight reel | `introSlides.json` |
+| Who's watching? profiles and their section order (first profile is the main one) | `viewers.json` |
+| Section names in the nav and cards | `sections.json` |
+| Opening studio card text | `originalLabel` in `profile.json` |
 
 **Resume:** replace `public/assets/Jitendra_Sethia_Resume.pdf`.
 

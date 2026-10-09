@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jitendra",
+    "name": "Jitendra",
+    "blurb": "The full series, in order",
+    "color": "#e5132b",
+    "order": [
+      "about",
+      "journey",
+      "originals",
+      "picks",
+      "skills",
+      "moments",
+      "story"
+    ]
+  },
+  {
+    "id": "client",
+    "name": "Client",
+    "blurb": "What I can automate for you",
+    "color": "#ffb547",
+    "glyph": "⚡",
+    "order": [
+      "originals",
+      "picks",
+      "skills",
+      "about",
+      "moments",
+      "journey",
+      "story"
+    ]
+  },
+  {
+    "id": "recruiter",
+    "name": "Recruiter",
+    "blurb": "Resume, achievements & skills first",
+    "color": "#4cc9ff",
+    "glyph": "R",
+    "order": [
+      "story",
+      "moments",
+      "skills",
+      "originals",
+      "about",
+      "journey",
+      "picks"
+    ]
+  },
+  {
+    "id": "developer",
+    "name": "Developer",
+    "blurb": "Projects, stack & GitHub first",
+    "color": "#46e3a8",
+    "glyph": "</>",
+    "order": [
+      "originals",
+      "skills",
+      "journey",
+      "moments",
+      "about",
+      "picks",
+      "story"
+    ]
+  }
+]

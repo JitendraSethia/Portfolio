@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Biggest stage",
+    "title": "SIH 2025",
+    "detail": "National Finalist • top 0.1% of 50,000+ teams",
+    "theme": "amber"
+  },
+  {
+    "label": "Highest volume",
+    "title": "300+ videos",
+    "detail": "per month, from one pipeline",
+    "theme": "crimson"
+  },
+  {
+    "label": "Most brands",
+    "title": "6 sub-accounts",
+    "detail": "GoHighLevel + VAPI for one tree-care group",
+    "theme": "jade"
+  },
+  {
+    "label": "Deepest engineering",
+    "title": "The Saga",
+    "detail": "Idempotency • compensation • encryption",
+    "theme": "ocean"
+  },
+  {
+    "label": "Live right now",
+    "title": "Realtime Chat",
+    "detail": "Web on Render + Android app",
+    "theme": "violet"
+  },
+  {
+    "label": "Smartest agent",
+    "title": "5 tools, 1 path",
+    "detail": "LangGraph CRM with a shared CRUD layer",
+    "theme": "amber"
+  },
+  {
+    "label": "Most resilient",
+    "title": "0 API keys",
+    "detail": "People's Priorities runs on its fallback",
+    "theme": "jade"
+  },
+  {
+    "label": "Best bug story",
+    "title": "Error -1021",
+    "detail": "Clock drift, found in the logs, fixed",
+    "theme": "crimson"
+  },
+  {
+    "label": "Public code",
+    "title": "6 repos",
+    "detail": "All open on GitHub",
+    "theme": "ocean"
+  },
+  {
+    "label": "Current role",
+    "title": "Codexlane",
+    "detail": "AI Automation Engineer",
+    "theme": "violet"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "issuer": "TypeScript",
+    "name": "Telemedicine Backend",
+    "link": "https://github.com/JitendraSethia/amrutam-telemedicine-backend"
+  },
+  {
+    "issuer": "Next.js",
+    "name": "Prep Portal",
+    "link": "https://github.com/JitendraSethia/prep-portal"
+  },
+  {
+    "issuer": "Python",
+    "name": "AI-First CRM (LangGraph)",
+    "link": "https://github.com/JitendraSethia/Task1--Jitenda-Sethia"
+  },
+  {
+    "issuer": "Flask",
+    "name": "People's Priorities — Kolkata",
+    "link": "https://github.com/JitendraSethia/GDG--People-s-Priorities--Kolkata"
+  },
+  {
+    "issuer": "Node.js",
+    "name": "Realtime Chat (web + Android)",
+    "link": "https://github.com/JitendraSethia/ChatBot"
+  },
+  {
+    "issuer": "Python",
+    "name": "Futures Trading Bot",
+    "link": "https://github.com/JitendraSethia/trading_bot"
+  }
+]
