@@ -31,7 +31,7 @@ export const LOCK_SECONDS = 15 * 60;
 const OTP_TTL = 10 * 60;
 const MAX_OTP_TRIES = 5;
 const MAX_OTP_SENDS = 3; // per 15 minutes
-export const MIN_PASSWORD = 10;
+export const MIN_PASSWORD = 6;
 
 function db(): Redis {
   if (!redis) throw new HttpError(500, 'Storage is not configured (Upstash env vars missing).');
