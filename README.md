@@ -53,7 +53,7 @@ npm run images
 
 This rebuilds the responsive WebP portraits and the social share image in `public/assets/`.
 
-Until a photo is added, the site uses a silhouette made by `node scripts/placeholder-portrait.mjs`.
+Shot on a plain light background? `node scripts/cutout.mjs <photo>` makes `pic.png` and `pic1.jpeg` for you (it removes only background connected to the edges, so teeth and glasses highlights are kept).
 
 ## What's inside
 
